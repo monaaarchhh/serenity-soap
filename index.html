@@ -6,11 +6,91 @@
   <title>Serenity Soap</title>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f7f5f2;
-      color: #333;
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f7f5f2;
+    color: #333;
+  }
+
+  header {
+    background-color: #c8e6c9;
+    padding: 25px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+  }
+
+  main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    color: #2e7d32;
+  }
+
+  .card p {
+    font-size: 0.95em;
+  }
+
+  .card button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+  }
+
+  .card button:hover {
+    background-color: #1b5e20;
+  }
+
+  footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+</style>
     }
 
     header {
@@ -58,16 +138,39 @@
   </nav>
 </header>
 
-<main>
-  <section>
+  <main>
+
+  <section class="intro">
     <h2>Jabones artesanales naturales</h2>
     <p>Cuidamos tu piel con productos suaves, naturales y aromáticos.</p>
   </section>
 
-  <section>
-    <h2>Productos destacados</h2>
-    <p>Jabón de lavanda, coco, avena y miel.</p>
+  <section class="productos">
+    <div class="card">
+      <h3>Lavanda</h3>
+      <p>Relajante y suave, ideal para la noche.</p>
+      <button>Ver producto</button>
+    </div>
+
+    <div class="card">
+      <h3>Coco</h3>
+      <p>Hidratación profunda y aroma tropical.</p>
+      <button>Ver producto</button>
+    </div>
+
+    <div class="card">
+      <h3>Avena</h3>
+      <p>Perfecto para piel sensible.</p>
+      <button>Ver producto</button>
+    </div>
+
+    <div class="card">
+      <h3>Miel</h3>
+      <p>Nutritivo y naturalmente antibacterial.</p>
+      <button>Ver producto</button>
+    </div>
   </section>
+
 </main>
 
 <footer>
